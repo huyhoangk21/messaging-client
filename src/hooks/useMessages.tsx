@@ -80,7 +80,9 @@ export const MessagesProvider = ({
         setMessages(messages);
         setHasMoreMessages(hasMore);
       },
-      onError: err => {},
+      onError: err => {
+        console.log(err);
+      },
     }
   );
 
