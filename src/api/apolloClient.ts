@@ -7,9 +7,6 @@ import {
 import { WebSocketLink } from '@apollo/client/link/ws';
 import { getMainDefinition, Reference } from '@apollo/client/utilities';
 
-console.log(process.env.REACT_APP_HTTP_SERVER);
-console.log(process.env.REACT_APP_WS_SERVER);
-
 const httpLink = createHttpLink({
   uri: process.env.REACT_APP_HTTP_SERVER,
   credentials: 'include',
