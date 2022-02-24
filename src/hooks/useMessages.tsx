@@ -125,7 +125,6 @@ export const MessagesProvider = ({
         const deletedMessage: Message =
           subscriptionData.data.messageDeletedById;
 
-        console.log(deletedMessage);
         const { cursor, hasMore, messages }: MessageFeed =
           prev.getMessagesByChannel;
 

@@ -74,6 +74,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
           role,
         });
       }
+      console.log('get me');
     },
   });
 
