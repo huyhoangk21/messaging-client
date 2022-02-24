@@ -14,7 +14,7 @@ const Layout = () => {
     auth: { authenticated },
   } = useAuth();
 
-  if (!authenticated) return <Navigate to='/signin' />;
+  if (!authenticated) return <Navigate to='/' />;
 
   return (
     <DrawerProvider>

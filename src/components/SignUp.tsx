@@ -105,12 +105,7 @@ const SignUp = () => {
         }}
       >
         Already have an account?{' '}
-        <Link
-          underline='none'
-          fontWeight={600}
-          component={RouterLink}
-          to='/signin'
-        >
+        <Link underline='none' fontWeight={600} component={RouterLink} to='/'>
           Sign in
         </Link>
       </Box>

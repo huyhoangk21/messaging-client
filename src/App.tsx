@@ -8,7 +8,7 @@ function App() {
   return (
     <Routes>
       <Route path='/'>
-        <Route path='signin' element={<SignIn />} />
+        <Route index element={<SignIn />} />
         <Route path='signup' element={<SignUp />} />
         <Route path='channels' element={<Layout />}>
           <Route path=':channel' element={<Channel />} />
