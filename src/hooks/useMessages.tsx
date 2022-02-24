@@ -109,6 +109,9 @@ export const MessagesProvider = ({
           },
         };
       },
+      onError: e => {
+        console.log(e);
+      },
     });
 
     return () => unsubscribe();
@@ -143,6 +146,9 @@ export const MessagesProvider = ({
             ],
           },
         };
+      },
+      onError: e => {
+        console.log(e);
       },
     });
 
