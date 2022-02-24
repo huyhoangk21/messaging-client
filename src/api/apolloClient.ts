@@ -13,7 +13,7 @@ const httpLink = createHttpLink({
 });
 
 const wsLink = new WebSocketLink({
-  uri: process.env.WS_SERVER!,
+  uri: process.env.WS_SERVER as string,
   options: {
     reconnect: true,
     reconnectionAttempts: 5,
